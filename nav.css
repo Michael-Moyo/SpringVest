@@ -1,0 +1,37 @@
+
+
+  
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin-top: 38.2px;
+    margin-left: 384px;
+    margin-right: 384px;
+  }
+  
+  .navigation img {
+    max-width: 100px;
+  }
+  
+  .navigation ul {
+    list-style-type: none;
+  }
+
+  .navigation ul a {
+    text-decoration: none;
+    color: var(--springvest-paragraph);
+    font-family: 'Inter';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27.2px; /* 181.333% */
+    letter-spacing: -0.48px;
+  }
+  
+  .navigation li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
