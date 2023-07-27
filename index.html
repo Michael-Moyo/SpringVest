@@ -113,7 +113,24 @@
       <div class="faq">
         <div class="faq-content">
           <h2>Have more <br>questions?</h2>
-          <div class="button"><button type="submit">Send us a Message</button></div>
+          <div class="button" ><button type="submit" class="open-button" id="openPopupBtn">Send us a Message</button></div>
+          <div class="overlay" id="overlay"></div>
+          <div class="popup" id="popup">
+            <label for="popup-checkbox" class="close-button">&times;</label>
+            <h2>Pop-up Form</h2>
+            <form action="#" method="post">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+      
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+      
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+      
+              <input type="submit" value="Submit">
+            </form>
+          </div>
           <img src="/Assets/Cow alert.png" alt="livestock-alert" class="cowalert">
         </div>
         <!-- Two columns for FAQ accordion -->
@@ -147,7 +164,7 @@
            <h2>Don't miss out on this !</h2>
             <p>Together, we can create sustainable farming practices, contribute
             to the economy, and earn remarkable returns.</p>
-            <button type="submit" class="button">Send us a Message</button>
+            <!-- <button type="submit" class="button open-button" id="openPopupBtn">Send us a Message</button> -->
           </div>
           <div><img src="/Assets/Subscribe Cow.png" alt="Subscribe">
           </div>
@@ -180,5 +197,6 @@
     </footer>
   </section>
   <script src="/accordion.js"></script>
+  <script src="/popup.js"></script>
 </body>
 </html>
