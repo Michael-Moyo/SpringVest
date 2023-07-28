@@ -272,10 +272,12 @@ body, h1, h2, h3, p, ul, li {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  padding: 20px;
-  max-width: 400px;
+  background-color: #F1F3F6;
+  /* border: 1px solid #ccc; */
+  border-radius: 10px;
+  padding: 80px 46px;
+  width: 720px;
+  max-width: 1165px; /*400px;*/
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   z-index: 1000;
   display: none;
@@ -293,28 +295,80 @@ body, h1, h2, h3, p, ul, li {
 /* Style for the form inside the pop-up */
 form {
   margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
-label {
+/* label {
   display: block;
   margin-bottom: 5px;
+} */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 38%;
+  padding: 16px 29px; 
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #FFF;
 }
 
 input[type="text"],
 input[type="email"],
+input[type="tel"], 
+::placeholder {
+    color: #171414;
+    font-family: 'Inter';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 120% */
+}
+
 textarea {
-  width: 100%;
-  padding: 5px;
+  width: 90%;
+  padding: 29px;
   margin-bottom: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #FFF;
+  font-family: 'Inter';
+}
+  
+textarea::placeholder {
+  color: #171414;
+  font-family: 'Inter';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 120% */
 }
 
 input[type="submit"] {
   cursor: pointer;
-  padding: 10px;
-  background-color: #007bff;
+  background-color: #069B40;
   color: #fff;
   border: none;
   border-radius: 5px;
+  padding: 14px 56px;
+  margin-left: 550px;
+}
+
+.popup h2{
+  text-align: center;
+  color: #069B40;
+  font-family: 'Inter';
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px; /* 40% */
+  padding-bottom: 20px;
 }
 
   .faq-content img {
