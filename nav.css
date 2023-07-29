@@ -1,7 +1,32 @@
 
+.navbar {
+  background-color: #333;
+  padding: 10px;
+}
 
-  
-  .navigation {
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.navbar li:last-child {
+  margin-right: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+  /*
+  .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,27 +36,27 @@
     margin-right: 384px;
   }
   
-  .navigation img {
+  .navbar img {
     max-width: 100px;
   }
   
-  .navigation ul {
+  .navbar ul {
     list-style-type: none;
   }
 
-  .navigation ul a {
+  .navbar ul a {
     text-decoration: none;
     color: var(--springvest-paragraph);
     font-family: 'Inter';
     font-size: 15px;
     font-style: normal;
     font-weight: 600;
-    line-height: 27.2px; /* 181.333% */
+    line-height: 27.2px; /* 181.333% 
     letter-spacing: -0.48px;
   }
   
-  .navigation li {
+  .navbar li {
     display: inline-block;
     margin-right: 20px;
   }
-  
+  */
